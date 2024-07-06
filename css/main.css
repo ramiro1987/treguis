@@ -1,0 +1,380 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos de la navbar */
+.navbar {
+    background-color: #0a0707;
+    height: 85px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+/* Estilo del logo en la navbar */
+.navbar .navbar-brand img.logo {
+    max-width: 60px;
+    /* Ajusta el tamaño del logo */
+    max-height: 60px;
+    margin-left: 30px;
+    /* Ajusta el margen del logo */
+}
+
+/* Estilos para el botón del menú hamburguesa */
+.navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+    /* Borde del botón en color blanco con transparencia */
+    /* Ajusta el padding del botón */
+    align-self: center;
+    /* Asegura que el toggler esté centrado verticalmente */
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    /* Cambia el color del ícono a blanco */
+}
+
+/* Estilos del menú desplegable */
+.navbar-collapse {
+    background-color: #0a0707;
+
+    /* Asegura que el fondo del menú desplegable sea igual al de la navbar */
+
+}
+
+.navbar-nav {
+    align-items: center;
+
+    /* Alinea los items del menú verticalmente al centro */
+}
+
+.navbar .navbar-nav .nav-link {
+
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    /* Ajusta el tamaño de la fuente para adaptarse a la nueva altura */
+    margin-right: 20px;
+    /* Ajusta el margen derecho */
+    color: #F5F5F5FA;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #FE9B33;
+}
+
+.hero {
+    position: relative;
+    background-image: url('../img/bg-camioneta.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Ajusta el último valor (0.5) para controlar la opacidad */
+}
+
+.hero-content {
+    position: relative;
+    /* Asegura que el contenido esté por encima del overlay */
+    z-index: 1;
+    /* Coloca el contenido por encima del overlay */
+    padding-right: 30px;
+    padding-left: 15px;
+}
+
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #FE9B33;
+    /* Color naranja para que resalte */
+    text-transform: uppercase;
+    /* Opcional: para que esté en mayúsculas */
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    /* Tamaño del título */
+    margin-bottom: 20px;
+    margin-top: 0;
+    /* Espacio inferior del título */
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 00;
+    /* Tamaño del texto */
+    margin-bottom: 20px;
+    /* Espacio inferior del texto */
+}
+
+.hero .btn-primary {
+    background-color: #FE9B33;
+    /* Color de fondo del botón */
+    color: #ffffff;
+    font-weight: 500;
+
+    /* Color del texto del botón */
+    padding: 12px 30px;
+    /* Espaciado interno del botón */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    /* Quita la subrayado del enlace */
+    transition: background-color 0.3s ease;
+    /* Transición suave */
+}
+
+.hero .btn-primary:hover {
+    background-color: #FFA94D;
+    /* Cambio de color al pasar el mouse */
+}
+
+.hero-logo {
+    display: flex;
+    justify-content: flex-end;
+    /* Alinea el logo a la derecha */
+    align-items: center;
+    height: 100%;
+    /* Ajusta la altura del contenedor del logo */
+}
+
+.hero-logo img {
+    max-width: 100%;
+    /* Ajusta el tamaño máximo del logo */
+}
+
+.about-us {
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.about-card {
+    width: 90%;
+    /* Aumentamos el ancho de la card */
+    max-width: 1200px;
+    /* Aumentamos el ancho máximo */
+    margin: 0 auto;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-card .card-body {
+    padding: 50px;
+    /* Aumentamos el padding */
+}
+
+.about-card .card-title {
+    color: #F5F5F5FA;
+    background-color: #FE9B33;
+    padding: 10px 20px;
+    font-size: 3rem;
+    /* Aumentamos ligeramente el tamaño del título */
+    margin-bottom: 30px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.about-card .card-text {
+    color: #1b1b1b;
+    font-size: 1.2rem;
+    /* Aumentamos ligeramente el tamaño del texto */
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.about-card .card-line {
+    width: 190px;
+    /* Ancho de la línea */
+    height: 9px;
+    /* Altura de la línea */
+    background-color: #FE9B33;
+    /* Color naranja */
+    margin: 20px auto;
+    /* Margen superior e inferior automático y centrado horizontal */
+}
+
+.about-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-card .row {
+    height: 100%;
+    /* Ajustamos la altura de la fila al 100% */
+}
+
+.about-card .col-md-6 {
+    height: 100%;
+    /* Ajustamos la altura de las columnas al 100% */
+}
+
+
+@media (max-width: 768px) {
+    .about-us {
+        height: 100vh;
+        min-height: 100vh;
+        padding: 40px 0;
+        display: block;
+        /* Aumentamos el padding en móviles */
+    }
+
+    .about-card {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .about-card .col-md-6 img {
+        display: none;
+        /* Oculta la columna que contiene la imagen en pantallas móviles */
+    }
+
+    .about-card .card-body {
+        padding: 30px;
+    }
+
+    .about-card .card-title {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        /* Reducimos el margen inferior */
+    }
+
+    .about-card .card-text {
+        font-size: 1rem;
+        /* Ajustamos el tamaño del texto para móviles */
+    }
+
+    .about-card img {
+        height: 20%;
+        /* Aumentamos la altura de la imagen en móviles */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        height: 100;
+        padding: 50px 0;
+        /* Añadimos padding vertical */
+    }
+
+    .hero-content {
+        text-align: left;
+        /* Centramos el contenido en móviles */
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-top: 0;
+        /* Eliminamos el margen superior en móviles */
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.3rem;
+        /* Reducimos el tamaño de la fuente del título */
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        /* Reducimos el tamaño de la fuente del párrafo */
+    }
+
+    .hero .btn-primary {
+        padding: 10px 20px;
+        /* Reducimos el padding del botón */
+        font-size: 0.9rem;
+        /* Reducimos el tamaño de la fuente del botón */
+    }
+
+    .hero-logo {
+        justify-content: center;
+    }
+
+    .hero-logo img {
+        max-width: 70%;
+        max-height: 40%;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 85px;
+        left: 0;
+        right: 0;
+        background-color: #0a0707;
+        padding: 15px;
+    }
+
+}
+
+
+
+
+footer {
+    text-align: left;
+    background-color: #0a0707;
+    color: #F5F5F5FA;
+}
+
+footer i.fab {
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer i.fa {
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer i.fab:hover {
+    color: #FE9B33;
+}
+
+footer i.fa:hover {
+    color: #FE9B33;
+}
+
+@media (max-width: 768px) {
+    footer {
+        font-size: 13px;
+    }
+}
