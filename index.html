@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/webp" href="./img/logo.webp">
+    <link rel="icon" type="image/webp" href="./img/logo.webp" />
     <title>Treguis</title>
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!-- CDN Font awesome -->
     <link
       rel="stylesheet"
@@ -15,95 +20,277 @@
     <!-- CSS Main -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    
   </head>
   <body>
-
     <header>
       <nav class="navbar navbar-expand-md navbar-light">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">
-                  <img src="./img/logo.webp" alt="logo" class="logo img-fluid" style="max-width: 60px; max-height: 60px;">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                  <ul class="navbar-nav">
-                      <li class="nav-item">
-                          <a class="nav-link" href="index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="paginas/institucional.html"> Misión</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="paginas/carreras.html"> Servicios</a>
-                      </li>  
-                      <li class="nav-item">
-                          <a class="nav-link" href="paginas/contacto.html"> Contacto</a>
-                      </li>
-                  </ul>
-              </div>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./img/logo.webp"
+              alt="logo"
+              class="logo img-fluid"
+              style="max-width: 60px; max-height: 60px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#flota"> Flota</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#fortalezas"> Misión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paginas/carreras.html"> Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paginas/contacto.html"> Contacto</a>
+              </li>
+            </ul>
           </div>
+        </div>
       </nav>
-  </header>
+    </header>
 
-  <section class="hero">
-    <div class="container">
+    <section class="hero">
+      <div class="container">
         <div class="row">
+          <div class="col-md-6">
+            <div class="hero-content">
+              <p class="hero-subtitle">Transporte de Materiales y Personas</p>
+              <h1>TREGUIS</h1>
+              <p>
+                Innovando el Transporte en la Industria Minera <br />
+                Servicio de Traslado 4x4
+              </p>
+              <a href="#about-us" class="btn btn-primary">Sobre Nosotros</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-us" class="about-us">
+      <div class="container h-100 d-flex align-items-center">
+        <div class="card about-card">
+          <div class="row g-0">
             <div class="col-md-6">
-                <div class="hero-content">
-                    <p class="hero-subtitle">Transporte de Materiales y Personas</p>
-                    <h1>TREGUIS</h1>
-                    <p>Innovando el Transporte en la Industria Minera <br> Servicio de Traslado 4x4</p>
-                    <a href="#about-us" class="btn btn-primary">Sobre Nosotros</a>
+              <img
+                src="./img/equipo2.webp"
+                class="img-fluid rounded-start"
+                alt="Sobre Nosotros"
+              />
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h2 class="card-title">SOBRE NOSOTROS</h2> <br> <br>
+                <p class="card-text">
+                  TREGUIS Servicios Generales es una empresa joven y dinámica
+                  dedicada a ofrecer soluciones de transporte especializadas
+                  para la industria minera. Con una visión <b>innovadora</b> y
+                  un fuerte compromiso con la calidad y la seguirdad, estamos
+                  listos para satisfacer sus necesidades de transporte.
+                </p>
+                <div class="card-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="flota">
+      <div class="content">
+        <h2>NUESTRA FLOTA</h2>
+        <p >
+          Flota de vehiculos ideales para terrenos dificeiles y transporte de pequeñas cargas. <br>
+          Combis perfectas para el traslado de empleados garntizando comodidad y seguridad. <br>
+          Todos nuestros vehiculos estan equipados con GPS, sistema de comunicacion y cumplen con las normativas de seguridad vigente
+        </p>
+
+        <div id="flotaCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/flota1.jpeg" class="d-block w-100" alt="Imagen 1" />
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/Flota2.jpeg" class="d-block w-100" alt="Imagen 2" />
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/Flota3.jpeg" class="d-block w-100" alt="Imagen 3" />
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/Flota2.jpeg" class="d-block w-100" alt="Imagen 4" />
                 </div>
             </div>
+            <a
+                class="carousel-control-prev"
+                href="#flotaCarousel"
+                role="button"
+                data-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a
+                class="carousel-control-next"
+                href="#flotaCarousel"
+                role="button"
+                data-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<section id="about-us" class="about-us">
-  <div class="container h-100 d-flex align-items-center">
-      <div class="card about-card">
-          <div class="row g-0">
-              <div class="col-md-6">
-                  <img src="./img/equipo2.webp" class="img-fluid rounded-start" alt="Sobre Nosotros">
+    <!-- SECCION FORTALEZA -->
+    <section id="fortalezas">
+      <div class="container wow fadeInUp">
+          <div class="row horiz-center mb-2">
+              <div class="col-12 title">
+                  FORTALEZAS  
               </div>
-              <div class="col-md-6">
-                  <div class="card-body">
-                      <h2 class="card-title"> SOBRE NOSOTROS</h2>
-                      <p class="card-text">TREGUIS Servicios Generales es una empresa joven y dinámica dedicada a ofrecer soluciones de transporte especializadas para la industria minera. Con una visión <b>innovadora</b>  y un fuerte compromiso con la calidad y la seguirdad, estamos listos para satisfacer sus necesidades de transporte.</p>
-                      <div class="card-line"></div>
+              <div class="col-lg-12 col-sm-12 content">
+                  <div class="row">
+                      <div class="col-lg-6 col-sm-12">
+                          <ul id="beneficios">
+                              <li><b>INNOVACIÓN:</b> Somos una empresa nueva con ideas frescas y enfoques modernos.</li>
+                              <li><b>COMPROMISO:</b> Firme dedicación a nuestros proyectos y clientes.</li>
+                          </ul>
+                      </div>
+                      <div class="col-lg-6 col-sm-12">
+                          <ul id="beneficios">
+                              <li><b>FLEXIBILIDAD:</b> Adaptación rápida a los cambios del mercado.</li> <br>
+                              <li><b>ENTUSIASMO:</b> Pasión por lo que hacemos y la actitud positiva.</li>
+                          </ul>
+                      </div>
                   </div>
               </div>
           </div>
+          <div class="row">
+            <div class="wow fadeInUp col-lg-6 col-12 pl-0 ">
+              <div class="col-12 bg-ligth-gray-2 text-white text-center font-weight-bold pt-2 pb-2" style="background-color: #3937449c;">
+                MISION - VISION
+              </div>
+              <div class="bg-white p-4">
+                <p>
+                  <b>Misión:</b> Proveer servicios de transporte seguros, eficientes y personalizados que contribuyan al desarrollo y exito de nuestros clientes en la 
+                  industria minera
+                </p>
+                <p>
+                  <b>Visión:</b> Convertirnos en una empresa reconocida por nuestra calidad, seguridad y compromiso con la excelencia operativa en el transporte para el 
+                  sector minero
+                </p>
+              </div>
+            </div>
+    
+    
+            <div class="wow fadeInUp col-lg-6 col-12 pl-0">
+              <div class="col-12 bg-ligth-gray-2 text-white text-center font-weight-bold pt-2 pb-2" style="background-color: #3937449c;">
+                COMPROMISO CON LA SEGURIDAD
+              </div>
+              <div class="bg-white p-4">
+                <p>
+                  La seguridad es nuestra prioridad. Implementamos rigurosos protocolos de sguridad y mantenimiento para todos nuestros vehiculos.
+                </p>
+                <p>
+                Asegurando operaciones libres de incidentes y cumpliendo con los mas altos estandares del sector.
+                </p>
+              </div>
+            </div>
+          </div>
       </div>
+     
+  </section>
+    <!-- whatsapp -->
+    <div class="btn-always-info-container">
+      <div class="icon-always-info-container">
+        <!-- <a href="https://api.whatsapp.com/send?phone=5493875286384&text=TREGUIS" target="_blank"> -->
+        <i class="fa fa-whatsapp" aria-hidden="true" style="color:#ffffff"></i>
+        <div class="dropdown-content">
+          <a href="https://api.whatsapp.com/send?phone=5493875286384&text=TREGUIS" target="_blank">Pablo</a>
+          <a href="https://api.whatsapp.com/send?phone=5493875491112&text=TREGUIS" target="_blank">Alejo </a>
+          <a href="https://api.whatsapp.com/send?phone=5493872208573&text=TREGUIS" target="_blank">Ramiro </a>
+      </div>
+      </div>
+    </a>
   </div>
-</section>
+  
 
-  <footer class="text-left py-3">
-    <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
+    <footer class="text-left py-3">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-between align-items-center"
+      >
         <div class="mb-3 mb-lg-0">
-            <h3 class="titulo-seccion">TREGUIS</h3>
-            <p class="info">Mza 604 A Casa 6 B° Pereyra Rosas - Salta Capital</p>
-            <p class="copy">© Todos los derechos reservados</p>
+          <h3 class="titulo-seccion">TREGUIS</h3>
+          <p class="info">
+            <i class="fa fa-map-marker"></i> Mza 604 A Casa 6 B° Pereyra
+            Rosas - Salta Capital
+          </p>
+          <p class="info">
+            <i class="fa fa-envelope"></i> cpneguizabal@gmail.com
+          </p>
+          <p class="info">
+            <i class="fa fa-envelope"></i> ramirodamian.dp@gmail.com
+          </p>
+          <p class="copy">© Todos los derechos reservados</p>
         </div>
         <div>
-            <a href="mailto:cpneguizabal@gmail.com" class="text-white me-4"><i class="fa fa-envelope"></i></a>
-            <a href="https://www.instagram.com/treguis.24/" target="_BLANK" class="text-white me-4"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:cpneguizabal@gmail.com" class="text-white me-4"
+            ><i class="fa fa-envelope"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/treguis.24/"
+            target="_BLANK"
+            class="text-white me-4"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
-    </div>
-</footer>
+      </div>
+    </footer>
 
     <!-- Jquery -->
     <script src="./js/jquery-3.5.0.min.js"></script>
     <!-- Popper -->
     <script src="./js/popper.min.js"></script>
     <!-- JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
