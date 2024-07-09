@@ -133,7 +133,7 @@ html {
 /* Seccion HERO */
 .hero {
     position: relative;
-    background-image: url('../img/bg-camioneta.webp');
+    background-image: url('../images/bg-camioneta.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -352,7 +352,8 @@ html {
 
   /* Ajustes para el carrusel */
 #flota .carousel {
-    height: 550px; /* Ajusta esta altura según tus necesidades */
+    height: 550px;
+     /* Ajusta esta altura según tus necesidades */
     overflow: hidden;
   }
   
@@ -400,37 +401,127 @@ html {
     font-size: 1.05rem;
   }
 
+  /* Estilos para la sección de servicios */
+/* Estilos para la sección de servicios */
+#servicios {
+    background-image: url(../images/camioneta-3.webp);
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .servicios-titulo {
+    color: #ffffff;
+    background-color: #FE9B33;
+    padding: 15px 20px;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .servicio-card {
+    background-color: #F5F5F5FA;
+    border: 3px solid #FE9B33;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    width: 340px;  /* Aumentado el ancho */
+    height: 400px; /* Reducido ligeramente la altura */
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .servicio-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Cambiado para reducir el espacio entre elementos */
+    height: 100%;
+    padding: 20px; /* Reducido el padding */
+  }
+  
+  .servicio-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .servicio-icono {
+    color: #FE9B33;
+    font-size: 3rem;
+    margin-bottom: 30px; /* Reducido el margen inferior */
+  }
+  
+  .servicio-card-titulo {
+    color: #0a0707;
+    font-size: 1.4rem; /* Reducido ligeramente el tamaño de fuente */
+    font-weight: 600;
+    margin-bottom: 30px; /* Reducido el margen inferior */
+    width: 100%; /* Asegura que el título ocupe todo el ancho disponible */
+  }
+  
+  .servicio-descripcion {
+    color: #0a0707;
+    font-size: 1rem;
+    margin-bottom: 0; /* Eliminado el margen inferior */
+  }
+
+  
+/* FOOTER */
+/* Estilos para la sección de contacto */
+#contacto {
+    background-color: #020202;
+    color: #F5F5F5FA;
+    padding: 50px 0;
+  }
+  
+  #contacto .contacto-titulo {
+    color: #F5F5F5FA;
+    background-color: #FE9B33;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  #contacto .titulo-seccion {
+    color: #FE9B33;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #contacto .info {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+
+  }
+  
+  #contacto i {
+    color: #FE9B33;
+    margin-right: 10px;
+  }
+  
+  #contacto .contacto-logo {
+    max-width: 150px;
+    height: auto;
+  }
+
+  footer {
+    background-color: #FE9B33;
+    color: #000;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
 
   @media (max-width: 768px) {
-    .about-us-section {
-        height: auto;
-        padding: 40px 0;
-    }
-
-    .about-us-card {
-        height: auto;
-    }
-
-    .about-us-card .card-body {
-        padding: 30px;
-    }
-
-    .about-us-card .card-title {
-        font-size: 2.2rem;
-        margin-bottom: 15px;
-    }
-
-    .about-us-card .card-text {
-        font-size: 1rem;
-    }
-
-    .about-us-card img {
-        height: 300px; /* Altura fija para móviles */
-    }
-}
-
-
-@media (max-width: 768px) {
     .hero {
         height: 100;
         padding: 50px 0;
@@ -486,34 +577,49 @@ html {
     }
 
 }
+@media (max-width: 768px) {
+    .about-us-section {
+        height: auto;
+        padding: 40px 0;
+    }
 
-/* FOOTER */
-footer {
-    text-align: left;
-    background-color: #0a0707;
-    color: #F5F5F5FA;
-}
+    .about-us-card {
+        height: auto;
+    }
 
-footer i.fab {
-    font-size: 20px;
-    transition: color 0.3s;
-}
+    .about-us-card .card-body {
+        padding: 30px;
+    }
 
-footer i.fa {
-    font-size: 20px;
-    transition: color 0.3s;
-}
+    .about-us-card .card-title {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
 
-footer i.fab:hover {
-    color: #FE9B33;
-}
+    .about-us-card .card-text {
+        font-size: 1rem;
+    }
 
-footer i.fa:hover {
-    color: #FE9B33;
+    .about-us-card img {
+        height: 300px; /* Altura fija para móviles */
+    }
 }
 
 @media (max-width: 768px) {
-    footer {
-        font-size: 13px;
+    .servicio-card {
+        width: 340px;
+      height: auto;
+      min-height: 320px;
     }
-}
+  }
+
+  @media (max-width: 768px) {
+    #contacto .text-md-end {
+      text-align: left !important;
+      margin-top: 20px;
+    }
+    
+    #contacto .contacto-logo {
+      max-width: 100px;
+    }
+  }
