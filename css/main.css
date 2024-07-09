@@ -369,23 +369,7 @@ html {
   }
 
 /* Fortalezas */
-.subtitulo {
-    color: #d4766f;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .horiz-center {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .vertic-center {
-    display: flex;
-    align-items: center;
-  }
-  
-  #fortalezas .box {
+    #fortalezas .box {
     margin-top: 50px;
     padding: 50px 20px;
     margin-bottom: 50px;
@@ -395,63 +379,26 @@ html {
     position: relative;
     background: #F5F5F5FA;
   }
-  
-  #fortalezas .icon {
-    position: absolute;
-    top: -36px;
-    left: calc(50% - 36px);
-    transition: 0.2s;
-    border-radius: 50%;
-    border: 6px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 72px;
-    height: 72px;
-    background: #2dc997;
-  }
-  
-  #fortalezas .icon a {
-    display: inline-block;
-  }
-  
-  #fortalezass .icon i {
-    color: #fff;
-    font-size: 24px;
-  }
-  
-  #fortalezas .box:hover .icon {
-    background: #fff;
-    border: 2px solid #2dc997;
-  }
-  
-
-  
+    
   #fortalezas .title {
     margin-top: 50px;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 25px;
     text-transform: uppercase;
     background-color: #FE9B33;
     text-align: center;
     color: #F5F5F5FA;
   }
-  
-  #fortalezas .title a {
-    color: #0A0707;
 
+  #fortalezas .subtitle{
+    font-size: 20px;
   }
-  
-  #fortalezas .description {
-    color: #0A0707;
 
-    font-size: 14px;
-    line-height: 24px;
+  #fortalezas .p-fortaleza{
+    color: #0A0707;
+    font-size: 1.05rem;
   }
-  
 
 
   @media (max-width: 768px) {
