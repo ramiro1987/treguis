@@ -25,7 +25,7 @@ html {
     font-size: 35px;
     width: 65px;
     height: 65px;
-    background-color: #1f9243;
+    background-color: #25d366;
     border-radius: 50px;
     display: flex;
     align-items: center; /* Centrar verticalmente */
@@ -238,7 +238,7 @@ html {
 }
 
 .about-card {
-    width: 90%;
+    width: 100%;
     /* Aumentamos el ancho de la card */
     max-width: 1200px;
     /* Aumentamos el ancho máximo */
@@ -261,14 +261,13 @@ html {
     padding: 10px 20px;
     font-size: 3rem;
     /* Aumentamos ligeramente el tamaño del título */
-    margin-bottom: 30px;
     font-weight: 600;
     border-radius: 10px;
 }
 
 .about-card .card-text {
     color: #1b1b1b;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     /* Aumentamos ligeramente el tamaño del texto */
     line-height: 1.7;
     margin-bottom: 20px;
@@ -302,29 +301,68 @@ html {
 }
 
 /* flota*/
-#flota h2 {
-    text-align: center;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-        font-size:50px;
-        color: white;
-}
-#flota p {
-    text-align: center;
-}
-#flota .content {
-    margin-top: 50px;
-    text-align: center;
+/* Estilos para la sección NUESTRA FLOTA */
+#flota {
+    padding: 50px 0; /* Ajusta el espaciado interior según sea necesario */
+  }
+  
+  #flota .about-card {
+    margin-top: 0; /* Quita el margen superior de la card */
+    margin-bottom: 0; /* Quita el margen inferior de la card */
+    height: 100%; /* Ajusta la altura de la card al 100% */
+    display: flex; /* Usa flexbox para alinear verticalmente el contenido */
+  }
+  
+  #flota .card-body {
+    padding: 30px; /* Ajusta el padding interno de la card */
+    flex: 1; /* Para que la card ocupe todo el espacio disponible */
+  }
+  
+  #flota .card-title {
+    color: #ffffff;
     background-color: #FE9B33;
-}
+    padding: 15px 20px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+  
+  #flota .fleet-list {
+    font-size: 1.3rem;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #flota .fleet-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  #flota .fleet-list li i {
+    color: #FE9B33;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
 
-#flotaCarousel .carousel-inner img {
+  /* Ajustes para el carrusel */
+#flota .carousel {
+    height: 550px; /* Ajusta esta altura según tus necesidades */
+    overflow: hidden;
+  }
+  
+  #flota .carousel-inner,
+  #flota .carousel-item {
+    height: 550px;
     width: 100%;
-    height: 700px; /* Puedes ajustar la altura según tus necesidades */
-    object-fit: cover; /* Ajusta la imagen para que cubra el área del contenedor */
-}
+  }
+  
+  #flota .carousel-item img {
+    object-fit: cover;
+    height: 550px;
+    width: 100%;
+  }
 
 /* Fortalezas */
 .subtitulo {
