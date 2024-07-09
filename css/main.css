@@ -382,7 +382,7 @@ html {
   }
     
   #fortalezas .title {
-    margin-top: 50px;
+    margin-top: 20px;
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 25px;
@@ -390,6 +390,17 @@ html {
     background-color: #FE9B33;
     text-align: center;
     color: #F5F5F5FA;
+  }
+
+  #fortalezas .fortalezas-titulo {
+    color: #F5F5F5FA;
+    background-color: #FE9B33;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    font-weight: 600;
+    border-radius: 10px;
+    display: inline-block;
   }
 
   #fortalezas .subtitle{
@@ -577,49 +588,86 @@ html {
     }
 
 }
-@media (max-width: 768px) {
-    .about-us-section {
-        height: auto;
-        padding: 40px 0;
+
+  @media (max-width: 768px) {
+    /* Ajustes para la sección de contacto */
+    #contacto .contacto-titulo {
+        font-size: 2rem;
     }
 
-    .about-us-card {
+    #contacto .titulo-seccion {
+        font-size: 1.5rem;
+    }
+
+    #contacto .info {
+        font-size: 0.9rem;
+    }
+
+    #contacto .text-md-end {
+        text-align: center !important;
+        margin-top: 20px;
+    }
+  
+    #contacto .contacto-logo {
+        max-width: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Ajustes para la sección NUESTRA FLOTA */
+    #flota .about-card {
         height: auto;
     }
 
-    .about-us-card .card-body {
+    #flota .card-body {
         padding: 30px;
     }
 
-    .about-us-card .card-title {
-        font-size: 2.2rem;
+    #flota .card-title {
+        font-size: 2rem;
         margin-bottom: 15px;
     }
 
-    .about-us-card .card-text {
+    #flota .fleet-list {
+        font-size: 1rem;
+    }
+
+    #flota .carousel {
+        height: 300px;
+    }
+
+    #flota .carousel-inner,
+    #flota .carousel-item,
+    #flota .carousel-item img {
+        height: 300px;
+    }
+
+    /* Ajustes generales para mantener consistencia */
+    .about-us-card,
+    #flota .about-card,
+    #flota .carousel {
+        height: auto;
+        min-height: 300px;
+    }
+
+    .about-us-card .card-title,
+    #flota .card-title,
+    .servicios-titulo,
+    .contacto-titulo {
+        font-size: 2rem;
+    }
+
+    .about-us-card .card-text,
+    #flota .fleet-list li,
+    .servicio-descripcion {
         font-size: 1rem;
     }
 
     .about-us-card img {
         height: 300px; /* Altura fija para móviles */
     }
+
+    #fortalezas .fortalezas-titulo {
+        font-size: 2rem;
+      }
 }
-
-@media (max-width: 768px) {
-    .servicio-card {
-        width: 340px;
-      height: auto;
-      min-height: 320px;
-    }
-  }
-
-  @media (max-width: 768px) {
-    #contacto .text-md-end {
-      text-align: left !important;
-      margin-top: 20px;
-    }
-    
-    #contacto .contacto-logo {
-      max-width: 100px;
-    }
-  }
