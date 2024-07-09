@@ -228,52 +228,70 @@ html {
 }
 
 /* Seccion Sobre Nosotros */
-.about-us {
-    height: 100vh;
+.about-us-section {
+    min-height: 100vh;
     background-color: #f8f9fa;
-    padding: 20px 0;
+    padding: 50px 0;
     display: flex;
     align-items: center;
-
 }
 
-.about-card {
-    width: 100%;
-    /* Aumentamos el ancho de la card */
-    max-width: 1200px;
-    /* Aumentamos el ancho máximo */
+.about-us-card {
+    width: 95%;
+    max-width: 1400px;
     margin: 0 auto;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 500px;
+    height: 550px;
+}
+
+.about-us-card .row {
+    height: 100%;
+}
+
+.about-us-card .col-md-6 {
+    height: 100%;
+}
+
+.about-us-card .card-body {
+    padding: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.about-card .card-body {
-    padding: 50px;
-    /* Aumentamos el padding */
-}
-
-.about-card .card-title {
+.about-us-card .card-title {
     color: #F5F5F5FA;
     background-color: #FE9B33;
     padding: 10px 20px;
-    font-size: 3rem;
-    /* Aumentamos ligeramente el tamaño del título */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
     font-weight: 600;
     border-radius: 10px;
+    display: inline-block;
 }
 
-.about-card .card-text {
+.about-us-card .card-text {
     color: #1b1b1b;
-    font-size: 1.3rem;
-    /* Aumentamos ligeramente el tamaño del texto */
+    font-size: 1.2rem;
     line-height: 1.7;
     margin-bottom: 20px;
 }
 
-.about-card .card-line {
+.about-us-card .card-line {
+    width: 190px;
+    height: 9px;
+    background-color: #FE9B33;
+    margin: 20px 0;
+}
+
+.about-us-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-us-card .card-line {
     width: 190px;
     /* Ancho de la línea */
     height: 9px;
@@ -282,22 +300,6 @@ html {
     /* Color naranja */
     margin: 20px auto;
     /* Margen superior e inferior automático y centrado horizontal */
-}
-
-.about-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.about-card .row {
-    height: 100%;
-    /* Ajustamos la altura de la fila al 100% */
-}
-
-.about-card .col-md-6 {
-    height: 100%;
-    /* Ajustamos la altura de las columnas al 100% */
 }
 
 /* flota*/
@@ -453,47 +455,31 @@ html {
   
 
 
-@media (max-width: 768px) {
-    .about-us {
-        height: 100vh;
-        min-height: 100vh;
-        padding: 40px 0;
-        display: block;
-        /* Aumentamos el padding en móviles */
-    }
-
-    .about-card {
-        width: 95%;
+  @media (max-width: 768px) {
+    .about-us-section {
         height: auto;
-        margin: 0 auto;
-
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
+        padding: 40px 0;
     }
 
-    .about-card .col-md-6 img {
-        display: none;
-        /* Oculta la columna que contiene la imagen en pantallas móviles */
+    .about-us-card {
+        height: auto;
     }
 
-    .about-card .card-body {
+    .about-us-card .card-body {
         padding: 30px;
     }
 
-    .about-card .card-title {
+    .about-us-card .card-title {
         font-size: 2.2rem;
-        margin-bottom: 20px;
-        /* Reducimos el margen inferior */
+        margin-bottom: 15px;
     }
 
-    .about-card .card-text {
+    .about-us-card .card-text {
         font-size: 1rem;
-        /* Ajustamos el tamaño del texto para móviles */
     }
 
-    .about-card img {
-        height: 20%;
-        /* Aumentamos la altura de la imagen en móviles */
+    .about-us-card img {
+        height: 300px; /* Altura fija para móviles */
     }
 }
 
