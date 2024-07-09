@@ -9,7 +9,166 @@
 html {
     scroll-behavior: smooth;
 }
+/* Fortalezas */
+.subtitulo {
+    color: #d4766f;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .horiz-center {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .vertic-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  #fortalezas .box {
+    margin-top: 50px;
+    padding: 50px 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+    height: 200px;
+    position: relative;
+    background: #fafafa;
+  }
+  
+  #fortalezas .icon {
+    position: absolute;
+    top: -36px;
+    left: calc(50% - 36px);
+    transition: 0.2s;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 72px;
+    height: 72px;
+    background: #2dc997;
+  }
+  
+  #fortalezas .icon a {
+    display: inline-block;
+  }
+  
+  #fortalezass .icon i {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  #fortalezas .box:hover .icon {
+    background: #fff;
+    border: 2px solid #2dc997;
+  }
+  
+  #fortalezas .box:hover .icon i {
+    color: #2dc997;
+  }
+  
+  #fortalezas .box:hover .icon a {
+    color: #2dc997;
+  }
+  
+  #fortalezas .title {
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    background-color: #FE9B33;
+    text-align: center;
+    color: #f8f9fa;
+  }
+  
+  #fortalezas .title a {
+    color: #111;
+  }
+  
+  #fortalezas .description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
 
+/*Whatsapp */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 100%; /* Posiciona el menú hacia arriba */
+    background-color: #f9f9f9;
+    min-width: 100px; /* Ajusta el ancho mínimo del menú */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 12px; /* Ajusta el tamaño de la fuente */
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px 10px; /* Ajusta el padding para hacer los elementos más pequeños */
+    text-decoration: none;
+    display: block;
+    font-size: 12px; /* Ajusta el tamaño de la fuente */
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.btn-always-info-container:hover .dropdown-content {
+    display: block;
+}
+.btn-always-info-container {
+    z-index: 9999999;
+    position: fixed;
+    bottom: 18px;
+    -webkit-box-shadow: 2px 4px 10px rgb(0 0 0 / 50%);
+    -moz-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 4px 10px rgb(0 0 0 / 50%);
+    border-radius: 50px;
+  }
+  .icon-always-info-container {
+    color: #ffffff;
+    padding-right: 6px;
+    padding-left: 6px;
+    font-size: 35px;
+    width: 65px;
+    height: 65px;
+    background-color: #1f9243;
+    border-radius: 50px;
+    line-height: 65px;
+    text-align: center;
+  }
+
+/* flota*/
+#flota h2 {
+    text-align: center;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        font-size:50px;
+        color: white;
+}
+#flota p {
+    text-align: center;
+}
+#flota .content {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #FE9B33;
+}
+
+#flotaCarousel .carousel-inner img {
+    width: 100%;
+    height: 700px; /* Puedes ajustar la altura según tus necesidades */
+    object-fit: cover; /* Ajusta la imagen para que cubra el área del contenedor */
+}
 /* Estilos de la navbar */
 .navbar {
     background-color: #0a0707;
@@ -19,6 +178,11 @@ html {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+}
+.a_navbar{
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Usa el color del elemento padre */
+    cursor: default; /* Cambia el cursor para que no parezca un enlace */
 }
 
 /* Estilo del logo en la navbar */
