@@ -572,10 +572,12 @@ html {
   }
 
   .client-logo {
-    max-width: 180px;
+    max-width: 220px;
     margin-bottom: 10px; /* Separación entre logos en columna */
 
   }
+
+
 }
 
 
