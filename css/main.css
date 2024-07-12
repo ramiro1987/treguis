@@ -133,7 +133,7 @@ html {
 /* Seccion HERO */
 .hero {
     position: relative;
-    background-image: url('../images/bg-camioneta.webp');
+    background-image: url('../images/camionetas.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -150,7 +150,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     /* Ajusta el último valor (0.5) para controlar la opacidad */
 }
 
@@ -521,6 +521,69 @@ html {
     max-width: 150px;
     height: auto;
   }
+
+  /* ACA COMIENZA LA SECCION DE CLIENTES */
+  /* Otros estilos */
+
+/* Otros estilos */
+
+#clients {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 30px;
+}
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.client-row {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-bottom: 5px;
+
+
+}
+
+.client-logo {
+
+  max-width: 230px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo responsivo para dispositivos móviles */
+@media (max-width: 768px) {
+  .client-row {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .client-logo {
+    max-width: 220px;
+    margin-bottom: 10px; /* Separación entre logos en columna */
+
+  }
+
+
+}
+
+
+
+  /* ACA TERMINA LA SECCION DE CLIENTES */
+
 
   footer {
     background-color: #FE9B33;
