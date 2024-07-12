@@ -63,7 +63,7 @@ html {
 
 /* Estilos de la navbar */
 .navbar {
-    background-color: #0a0707;
+    background-color: #ba9b5a;
     height: 85px;
     width: 100%;
     display: flex;
@@ -88,7 +88,7 @@ html {
 
 /* Estilos para el botón del menú hamburguesa */
 .navbar .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: #ba9b5a;
     /* Borde del botón en color blanco con transparencia */
     /* Ajusta el padding del botón */
     align-self: center;
@@ -102,7 +102,7 @@ html {
 
 /* Estilos del menú desplegable */
 .navbar-collapse {
-    background-color: #0a0707;
+    background-color: #ba9b5a;
 
     /* Asegura que el fondo del menú desplegable sea igual al de la navbar */
 
@@ -484,7 +484,7 @@ html {
 /* FOOTER */
 /* Estilos para la sección de contacto */
 #contacto {
-    background-color: #020202;
+    background-color: #ba9b5a;
     color: #F5F5F5FA;
     padding: 50px 0;
   }
@@ -646,7 +646,7 @@ html {
         top: 85px;
         left: 0;
         right: 0;
-        background-color: #0a0707;
+        background-color: #ba9b5a;
         padding: 15px;
     }
 
