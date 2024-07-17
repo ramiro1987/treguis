@@ -1,2 +1,0 @@
-# treguis
-Landing Transporte minero
