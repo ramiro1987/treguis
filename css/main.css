@@ -10,6 +10,57 @@ html {
     scroll-behavior: smooth;
 }
 
+/* WhatsApp */
+.btn-always-info-container {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+    z-index: 9999999;
+    box-shadow: 2px 4px 10px rgb(0 0 0 / 50%);
+    border-radius: 50px;
+}
+
+.icon-always-info-container {
+    color: #ffffff;
+    font-size: 35px;
+    width: 65px;
+    height: 65px;
+    background-color: #25d366;
+    border-radius: 50px;
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    cursor: pointer; /* Añade un cursor de mano para indicar que es un botón */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 80px; /* Ajusta esta distancia según sea necesario */
+    left: 0; /* Mantén el menú alineado con el botón */
+    background-color: #f9f9f9;
+    min-width: 120px; /* Ajusta el ancho mínimo del menú */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 12px; /* Ajusta el padding para hacer los elementos más pequeños */
+    text-decoration: none;
+    display: block;
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
 /* Estilos de la navbar */
 .navbar {
     background-color: #0a0707;
@@ -19,6 +70,11 @@ html {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+}
+.a_navbar{
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Usa el color del elemento padre */
+    cursor: default; /* Cambia el cursor para que no parezca un enlace */
 }
 
 /* Estilo del logo en la navbar */
@@ -74,9 +130,10 @@ html {
     color: #FE9B33;
 }
 
+/* Seccion HERO */
 .hero {
     position: relative;
-    background-image: url('../img/bg-camioneta.webp');
+    background-image: url('../images/camionetas.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,7 +150,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     /* Ajusta el último valor (0.5) para controlar la opacidad */
 }
 
@@ -170,53 +227,72 @@ html {
     /* Ajusta el tamaño máximo del logo */
 }
 
-.about-us {
-    height: 100vh;
+/* Seccion Sobre Nosotros */
+.about-us-section {
+    min-height: 100vh;
     background-color: #f8f9fa;
-    padding: 20px 0;
+    padding: 50px 0;
     display: flex;
     align-items: center;
-
 }
 
-.about-card {
-    width: 90%;
-    /* Aumentamos el ancho de la card */
-    max-width: 1200px;
-    /* Aumentamos el ancho máximo */
+.about-us-card {
+    width: 95%;
+    max-width: 1400px;
     margin: 0 auto;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 500px;
+    height: 550px;
+}
+
+.about-us-card .row {
+    height: 100%;
+}
+
+.about-us-card .col-md-6 {
+    height: 100%;
+}
+
+.about-us-card .card-body {
+    padding: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.about-card .card-body {
-    padding: 50px;
-    /* Aumentamos el padding */
-}
-
-.about-card .card-title {
+.about-us-card .card-title {
     color: #F5F5F5FA;
     background-color: #FE9B33;
     padding: 10px 20px;
-    font-size: 3rem;
-    /* Aumentamos ligeramente el tamaño del título */
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-weight: 600;
     border-radius: 10px;
+    display: inline-block;
 }
 
-.about-card .card-text {
-    color: #1b1b1b;
+.about-us-card .card-text {
+    color: #0A0707;
     font-size: 1.2rem;
-    /* Aumentamos ligeramente el tamaño del texto */
     line-height: 1.7;
     margin-bottom: 20px;
 }
 
-.about-card .card-line {
+.about-us-card .card-line {
+    width: 190px;
+    height: 9px;
+    background-color: #FE9B33;
+    margin: 20px 0;
+}
+
+.about-us-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-us-card .card-line {
     width: 190px;
     /* Ancho de la línea */
     height: 9px;
@@ -227,69 +303,299 @@ html {
     /* Margen superior e inferior automático y centrado horizontal */
 }
 
-.about-card img {
+/* flota*/
+/* Estilos para la sección NUESTRA FLOTA */
+#flota {
+    padding: 50px 0; /* Ajusta el espaciado interior según sea necesario */
+  }
+  
+  #flota .about-card {
+    margin-top: 0; /* Quita el margen superior de la card */
+    margin-bottom: 0; /* Quita el margen inferior de la card */
+    height: 100%; /* Ajusta la altura de la card al 100% */
+    display: flex; /* Usa flexbox para alinear verticalmente el contenido */
+  }
+  
+  #flota .card-body {
+    padding: 30px; /* Ajusta el padding interno de la card */
+    flex: 1; /* Para que la card ocupe todo el espacio disponible */
+  }
+  
+  #flota .card-title {
+    color: #ffffff;
+    background-color: #FE9B33;
+    padding: 15px 20px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+  
+  #flota .fleet-list {
+    font-size: 1.3rem;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #flota .fleet-list li {
+    color: #0A0707;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  #flota .fleet-list li i {
+    color: #FE9B33;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+
+  /* Ajustes para el carrusel */
+#flota .carousel {
+    height: 550px;
+     /* Ajusta esta altura según tus necesidades */
+    overflow: hidden;
+  }
+  
+  #flota .carousel-inner,
+  #flota .carousel-item {
+    height: 550px;
     width: 100%;
-    height: 100%;
+  }
+  
+  #flota .carousel-item img {
     object-fit: cover;
-}
+    height: 550px;
+    width: 100%;
+  }
 
-.about-card .row {
+/* Fortalezas */
+    #fortalezas .box {
+    margin-top: 50px;
+    padding: 50px 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: 1px solid #F5F5F5FA;
+    height: 200px;
+    position: relative;
+    background: #F5F5F5FA;
+  }
+    
+  #fortalezas .title {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    background-color: #FE9B33;
+    text-align: center;
+    color: #F5F5F5FA;
+  }
+
+  #fortalezas .fortalezas-titulo {
+    color: #F5F5F5FA;
+    background-color: #FE9B33;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    margin-top: 50px;
+    font-weight: 600;
+    border-radius: 10px;
+    display: inline-block;
+  }
+
+  #fortalezas .subtitle{
+    font-size: 20px;
+  }
+
+  #fortalezas .p-fortaleza{
+    color: #0A0707;
+    font-size: 1.05rem;
+  }
+
+  /* Estilos para la sección de servicios */
+/* Estilos para la sección de servicios */
+#servicios {
+    background-image: url(../images/camioneta-3.webp);
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .servicios-titulo {
+    color: #ffffff;
+    background-color: #FE9B33;
+    padding: 15px 20px;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 600;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .servicio-card {
+    background-color: #F5F5F5FA;
+    border: 3px solid #FE9B33;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    width: 340px;  /* Aumentado el ancho */
+    height: 400px; /* Reducido ligeramente la altura */
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .servicio-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Cambiado para reducir el espacio entre elementos */
     height: 100%;
-    /* Ajustamos la altura de la fila al 100% */
+    padding: 20px; /* Reducido el padding */
+  }
+  
+  .servicio-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .servicio-icono {
+    color: #FE9B33;
+    font-size: 3rem;
+    margin-bottom: 30px; /* Reducido el margen inferior */
+  }
+  
+  .servicio-card-titulo {
+    color: #0a0707;
+    font-size: 1.4rem; /* Reducido ligeramente el tamaño de fuente */
+    font-weight: 600;
+    margin-bottom: 30px; /* Reducido el margen inferior */
+    width: 100%; /* Asegura que el título ocupe todo el ancho disponible */
+  }
+  
+  .servicio-descripcion {
+    color: #0a0707;
+    font-size: 1rem;
+    margin-bottom: 0; /* Eliminado el margen inferior */
+  }
+
+  
+/* FOOTER */
+/* Estilos para la sección de contacto */
+#contacto {
+    background-color: #020202;
+    color: #F5F5F5FA;
+    padding: 50px 0;
+  }
+  
+  #contacto .contacto-titulo {
+    color: #F5F5F5FA;
+    background-color: #FE9B33;
+    padding: 10px 20px;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  #contacto .titulo-seccion {
+    color: #FE9B33;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #contacto .info {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+
+  }
+  
+  #contacto i {
+    color: #FE9B33;
+    margin-right: 10px;
+  }
+  
+  #contacto .contacto-logo {
+    max-width: 150px;
+    height: auto;
+  }
+
+  /* ACA COMIENZA LA SECCION DE CLIENTES */
+  /* Otros estilos */
+
+/* Otros estilos */
+
+#clients {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 30px;
 }
 
-.about-card .col-md-6 {
-    height: 100%;
-    /* Ajustamos la altura de las columnas al 100% */
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.client-row {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin-bottom: 5px;
 
+
+}
+
+.client-logo {
+
+  max-width: 230px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo responsivo para dispositivos móviles */
 @media (max-width: 768px) {
-    .about-us {
-        height: 100vh;
-        min-height: 100vh;
-        padding: 40px 0;
-        display: block;
-        /* Aumentamos el padding en móviles */
-    }
+  .client-row {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
 
-    .about-card {
-        width: 95%;
-        height: auto;
-        margin: 0 auto;
+  .client-logo {
+    max-width: 220px;
+    margin-bottom: 10px; /* Separación entre logos en columna */
 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-    }
 
-    .about-card .col-md-6 img {
-        display: none;
-        /* Oculta la columna que contiene la imagen en pantallas móviles */
-    }
-
-    .about-card .card-body {
-        padding: 30px;
-    }
-
-    .about-card .card-title {
-        font-size: 2.2rem;
-        margin-bottom: 20px;
-        /* Reducimos el margen inferior */
-    }
-
-    .about-card .card-text {
-        font-size: 1rem;
-        /* Ajustamos el tamaño del texto para móviles */
-    }
-
-    .about-card img {
-        height: 20%;
-        /* Aumentamos la altura de la imagen en móviles */
-    }
 }
 
 
-@media (max-width: 768px) {
+
+  /* ACA TERMINA LA SECCION DE CLIENTES */
+
+
+  footer {
+    background-color: #FE9B33;
+    color: #000;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
     .hero {
         height: 100;
         padding: 50px 0;
@@ -346,35 +652,85 @@ html {
 
 }
 
-
-
-
-footer {
-    text-align: left;
-    background-color: #0a0707;
-    color: #F5F5F5FA;
-}
-
-footer i.fab {
-    font-size: 20px;
-    transition: color 0.3s;
-}
-
-footer i.fa {
-    font-size: 20px;
-    transition: color 0.3s;
-}
-
-footer i.fab:hover {
-    color: #FE9B33;
-}
-
-footer i.fa:hover {
-    color: #FE9B33;
-}
-
-@media (max-width: 768px) {
-    footer {
-        font-size: 13px;
+  @media (max-width: 768px) {
+    /* Ajustes para la sección de contacto */
+    #contacto .contacto-titulo {
+        font-size: 2rem;
     }
+
+    #contacto .titulo-seccion {
+        font-size: 1.5rem;
+    }
+
+    #contacto .info {
+        font-size: 0.9rem;
+    }
+
+    #contacto .text-md-end {
+        text-align: center !important;
+        margin-top: 20px;
+    }
+  
+    #contacto .contacto-logo {
+        max-width: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Ajustes para la sección NUESTRA FLOTA */
+    #flota .about-card {
+        height: auto;
+    }
+
+    #flota .card-body {
+        padding: 30px;
+    }
+
+    #flota .card-title {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    #flota .fleet-list {
+        font-size: 1rem;
+    }
+
+    #flota .carousel {
+        height: 300px;
+    }
+
+    #flota .carousel-inner,
+    #flota .carousel-item,
+    #flota .carousel-item img {
+        height: 300px;
+    }
+
+    /* Ajustes generales para mantener consistencia */
+    .about-us-card,
+    #flota .about-card,
+    #flota .carousel {
+        height: auto;
+        min-height: 300px;
+    }
+
+    .about-us-card .card-title,
+    #flota .card-title,
+    .servicios-titulo,
+    .contacto-titulo {
+        font-size: 2rem;
+    }
+
+    .about-us-card .card-text,
+    #flota .fleet-list li,
+    .servicio-descripcion {
+        font-size: 1rem;
+    }
+
+    .about-us-card img {
+        height: 300px; /* Altura fija para móviles */
+    }
+
+    #fortalezas .fortalezas-titulo {
+        font-size: 2rem;
+      }
 }
